@@ -1,0 +1,352 @@
+﻿{
+	"activeGpMapId": "gp0",
+	"watermark": false,
+	"map": {
+		"initialExtent": {
+			"xmin": 171677,
+			"ymin": 20000,
+			"xmax": 861882,
+			"ymax": 900000
+		},
+		"fullExtent": {
+			"xmin": 171677,
+			"ymin": 20000,
+			"xmax": 861882,
+			"ymax": 900000
+		}
+	},
+	"gpmaps": {
+		"gp0": {
+			"active": true,
+			"label": "Mapa TOPO I",
+			"mapservices": [
+				{
+					"mapId": "msBDO92",
+					"index": 0,
+					"visible": true,
+					"alpha": 1,
+					"type": "tiled",
+					"serviceUrl": "https://mapy.geoportal.gov.pl/gprest/services/G2_MOBILE_500_test/MapServer",
+					"minScale":  32000000,
+					"maxScale": 1000
+				},
+				{
+					"mapId": "Adresy",
+					"index": 0,
+					"visible": true,
+					"alpha": 1,
+					"type": "WMS",
+					"serviceUrl": "http://mapy.geoportal.gov.pl/wssumm/services/G2_PRGADUMM_WMS/MapServer/WMSServer",
+					"minScale": 5000,
+            		"maxScale": 1000,
+					"options": {
+              			  	"layers": [{ "name": "PunktyAdresowe", "title": "PunktyAdresowe" },{ "name": "UlicePow", "title": "Ulice, place i osiedla" },{ "name": "UliceL", "title": "Ulice" }],
+                			"extent": [-47743,-503934,974608,1528069],
+                			"wkid": 2180,
+                			"visibleLayers": ["PunktyAdresowe","UlicePow","UliceL"]
+				}}
+			]
+		},
+		"gp1": {
+			"active": true,
+			"label": "Mapa ORTO",
+			"mapservices": [
+				{
+					"mapId": "msORto",
+					"index": 0,
+					"visible": true,
+					"alpha": 1.0,
+					"type": "tiled",
+					"serviceUrl": "https://mapy.geoportal.gov.pl/wss/service/imgurl/guest/ORTO/MapServer",
+					"minScale": 8000000,
+					"maxScale": 500
+				},
+				{
+					"mapId": "msORtoLabels",
+					"index": 0,
+					"visible": true,
+					"alpha": 0.6,
+					"type": "tiled",
+					"serviceUrl": "https://mapy.geoportal.gov.pl/gprest/services/G2_MOBILE_ORTO/MapServer",
+					"minScale": 8000000,
+					"maxScale": 500
+				},
+{
+					"mapId": "Adresy",
+					"index": 0,
+					"visible": true,
+					"alpha": 1,
+					"type": "WMS",
+					"serviceUrl": "http://mapy.geoportal.gov.pl/wssumm/services/G2_PRGADUMM_WMS/MapServer/WMSServer",
+					"minScale": 5000,
+            		"maxScale": 500,
+					"options": {
+              			  	"layers": [{ "name": "PunktyAdresowe", "title": "PunktyAdresowe" },{ "name": "UlicePow", "title": "Ulice, place i osiedla" },{ "name": "UliceL", "title": "Ulice" }],
+                			"extent": [-47743,-503934,974608,1528069],
+                			"wkid": 2180,
+                			"visibleLayers": ["PunktyAdresowe","UlicePow","UliceL"]
+				}}
+
+			]
+		},
+
+		"gp2": {
+			"active": true,
+			"label": "Ewidencja gruntów i budynków",
+			"mapservices": [
+				{
+					"mapId": "msORto",
+					"index": 0,
+					"visible": true,
+					"alpha": 1.0,
+					"type": "tiled",
+					"serviceUrl": "https://mapy.geoportal.gov.pl/wss/service/imgurl/guest/ORTO/MapServer",
+					"minScale": 8000000,
+					"maxScale": 500
+					
+				},
+				{
+					"mapId": "msBDO92",
+					"index": 0,
+					"visible": true,
+					"alpha": 1,
+					"type": "tiled",
+					"serviceUrl": "https://mapy.geoportal.gov.pl/gprest/services/G2_MOBILE_500_test/MapServer",
+					"minScale":  32000000,
+					"maxScale": 25000
+				},
+				{
+					"mapId": "KIEG",
+					"index": 0,
+					"visible": true,
+					"alpha": 1,
+					"type": "WMS",
+					"serviceUrl": "http://integracja.gugik.gov.pl/cgi-bin/KrajowaIntegracjaEwidencjiGruntow",
+					"minScale": 10000,
+            		"maxScale": 500,
+					"options": {
+              			  	"layers": [{ "name": "powiaty", "title": "Powiaty włączone do usługi" },{ "name": "ekw", "title": "Komunikacja z EKW w EGiB" },{ "name": "zsin", "title": "Zasilenia ZSIN" },{ "name": "obreby", "title": "Granice obrębów" },{ "name": "dzialki", "title": "Działki ewidencyjne z powiatów" },{ "name": "geoportal", "title": "Działki - uzupełnienie z LPIS" },{ "name": "numery_dzialek", "title": "Numery działek" },{ "name": "budynki", "title": "Budynki" }],
+                			"extent": [-47743,-503934,974608,1528069],
+                			"wkid": 2180,
+                			"visibleLayers": ["obreby","dzialki","geoportal","numery_dzialek","budynki"]
+				}}
+			]
+		},
+		"gp3": {
+			"active": true,
+			"label": "Skany map topograficznych",
+			"mapservices": [
+				{
+					"mapId": "msRaster_TOPO",
+					"index": 0,
+					"visible": true,
+					"alpha": 1,
+					"type": "tiled",
+					"serviceUrl": "https://mapy.geoportal.gov.pl/wss/service/imgurl/guest/TOPO/MapServer",
+					"maxScale": 1000
+				}
+			]
+		},
+		"gp4": {
+			"active": true,
+			"label": "TOPO/KATASTER",
+			"mapservices": [
+				{
+					
+					"mapId": "msBDO92",
+					"index": 0,
+					"visible": true,
+					"alpha": 1,
+					"type": "tiled",
+					"serviceUrl": "https://mapy.geoportal.gov.pl/gprest/services/G2_MOBILE_500/MapServer",
+					"maxScale": 500
+				
+					
+				},
+				{
+					"mapId": "msDzialki",
+					"index": 0,
+					"visible": true,
+					"alpha": 0.7,
+					"type": "tiled",
+					"serviceUrl": "https://mapy.geoportal.gov.pl/wss/service/puburl/guest/G2_GO_CACHE/MapServer",
+					"maxScale": 500
+				}
+			]
+		},
+		"gp5": {
+			"active": true,
+			"label": "Mapa TOPO II",
+			"mapservices": [
+				{
+					"mapId": "msBDO92",
+					"index": 0,
+					"visible": true,
+					"alpha": 1,
+					"type": "tiled",
+					"serviceUrl": "http://mapy.geoportal.gov.pl/wss/service/puburl/guest/kompozycja_BDOO_MOB/MapServer",
+					"minScale" : 8000000,
+					"maxScale" : 1000
+				},
+				{
+					"mapId": "msBDOT10K",
+					"index": 0,
+					"visible": true,
+					"alpha": 1,
+					"type": "tiled",
+					"serviceUrl": "http://mapy.geoportal.gov.pl/gprest/services/GPREST_kompozycja_BDOT10K_mob/MapServer",
+					"minScale" : 50000,
+					"maxScale" : 200
+				},
+				
+				{
+					"mapId": "Adresy",
+					"index": 0,
+					"visible": true,
+					"alpha": 1,
+					"type": "WMS",
+					"serviceUrl": "http://mapy.geoportal.gov.pl/wssumm/services/G2_PRGADUMM_WMS/MapServer/WMSServer",
+					"minScale": 5000,
+            		"maxScale": 200,
+					"options": {
+              			  	"layers": [{ "name": "PunktyAdresowe", "title": "PunktyAdresowe" },{ "name": "UlicePow", "title": "Ulice, place i osiedla" },{ "name": "UliceL", "title": "Ulice" }],
+                			"extent": [-47743,-503934,974608,1528069],
+                			"wkid": 2180,
+                			"visibleLayers": ["PunktyAdresowe","UlicePow","UliceL"]
+				}}
+				
+			]
+		}
+		
+	},
+	"gpactions": {
+		"pan": {
+			"active": false
+		},
+		"zoomIn": {
+			"active": false
+		},
+		"zoomOut": {
+			"active": false
+		},
+		"fullExtent": {
+			"active": true
+		},
+		"nextExtent": {
+			"active": false
+		},
+		"prevExtent": {
+			"active": false
+		},
+		"showInImap": {
+			"active": false,
+			"url": "https://mapy.geoportal.gov.pl/imap/"
+		},
+		"geolocalize": {
+			"active": true,
+			"show": true,
+			"center": true,
+			"marker": {
+				"icon": "https://mapy.geoportal.gov.pl/iMapLite/images/geolocalize_marker.png"
+			}
+		}
+	} ,
+	"defaultMarker": {
+		"icon": "https://mapy.geoportal.gov.pl/iMapLite/images/marker.png",
+		"width": 10,
+		"height": 10
+	},
+	"searchAddress": {
+		"show": true,
+		"url": "https://mapy.geoportal.gov.pl/openLSgp/AddressesServlet"
+	},
+	
+	"geometryService": "https://mapy.geoportal.gov.pl/gprest/services/Utilities/Geometry/GeometryServer",
+	"gpwidgets": {
+		"wgQuery2": {
+			"id": "wgQuery2",
+			"active": false,
+			"icon": "css-wg-search",
+			"label": "Szukaj adresów",
+			"layerDesc": "solr",
+			"type": "openls",
+			"queryBtn": true,
+			"infoTemplate": "${GMINA} ${MIEJSCOWOSC} ${NAZWA_ULICY} ${NR_ADR}",
+			"filters": [
+				{
+					"id": "f1",
+					"label": "Województwo",
+					"type": "textbox",
+					"openlsFld": "woj",
+					"finder": "false"
+				}, {
+					"id": "f2",
+					"label": "Gmina",
+					"type": "textbox",
+					"openlsFld": "gmina",
+					"finder": "false"
+				}, {
+					"id": "f3",
+					"label": "Powiat",
+					"type": "textbox",
+					"openlsFld": "pow",
+					"finder": "false"
+				}, {
+					"id": "f4",
+					"label": "Miejscowość",
+					"type": "textbox",
+					"openlsFld": "miejsc",
+					"finder": "false"
+				}, {
+					"id": "f5",
+					"label": "Ulica",
+					"type": "textbox",
+					"openlsFld": "ulica",
+					"finder": "false"
+				}, {
+					"id": "f6",
+					"label": "Numer",
+					"type": "textbox",
+					"openlsFld": "numer",
+					"finder": "false"
+				}, {
+					"id": "f7",
+					"label": "Teryt",
+					"type": "textbox",
+					"openlsFld": "teryt",
+					"finder": "false"
+				}
+			]
+		},
+		"wgQuery": {
+			"id": "wgQuery",
+			"active": true,
+			"icon": "css-wg-search",
+			"label": "Szukaj adresów",
+			"layerDesc": "solr",
+			"type": "openls",
+			"queryBtn": false,
+			"infoTemplate": "${NR_ADR}, ${NAZWA_ULICY} ${MIEJSCOWOSC} , gm. ${GMINA} , pow. ${POWIAT}, woj. ${WOJEWODZTWO}",
+			"filters": [
+				{
+					"id": "wgQueryText",
+					"label": "Proszę wpisać frazę",
+					"type": "textbox",
+					"openlsFld": "text",
+					"finder": "true"
+				}
+			]
+		}
+	},
+	"gplayers": {
+		"geopard.Adresy": {
+			"type": "openls",
+			"useLabel": true,
+			"functionName": "searchAddress",
+			"cityFieldName": "MIEJSCOWOSC_NAZWA",
+			"streetFieldName": "ULICA_NAZWA",
+			"numberFieldName": "NR_ADR"
+		}
+	},
+	"imlDataServiceUrl":  "imlDataService/service"
+}
